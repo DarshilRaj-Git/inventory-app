@@ -1,0 +1,227 @@
+/* -------------------- General Page -------------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------- Header -------------------- */
+header {
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+header nav a {
+  color: white;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #fbbf24;
+}
+
+/* -------------------- Hero Section -------------------- */
+.hero {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-blue {
+  background-color: #3b82f6;
+  color: #fff;
+}
+.btn-blue:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.btn-green {
+  background-color: #10b981;
+  color: #fff;
+}
+.btn-green:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.btn-red {
+  background-color: #ef4444;
+  color: #fff;
+}
+.btn-red:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* -------------------- Stats Section -------------------- */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.stats-card {
+  background: linear-gradient(135deg, #f472b6, #ec4899);
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.stats-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.stats-card p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* -------------------- Products Section -------------------- */
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-card .product-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card .product-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .product-info p {
+  flex-grow: 1;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .product-info .price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .product-info button {
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card .product-info button:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+}
+
+/* -------------------- Footer -------------------- */
+footer {
+  background-color: #111827;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #fbbf24;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
